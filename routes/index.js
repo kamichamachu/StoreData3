@@ -3,6 +3,12 @@ var router = express.Router();
 
 module.exports = router;
 
+/* GET home page. */
+router.get('/', function(req, res, next) {
+    res.render('index', { title: 'Express' });
+});
+
+
 //now processing post
 router.post('/storeData', function(req, res, next) {
 //expecting data variable called order--retrieve value using body-parser
