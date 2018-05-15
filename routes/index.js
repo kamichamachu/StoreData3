@@ -8,6 +8,12 @@ router.get('/', function(req, res, next) {
     res.render('index', { title: 'Express' });
 });
 
+/* GET home page. */
+router.get('/hi', function(req, res, next) {
+    res.send("hi");
+
+});
+
 
 //now processing post
 router.post('/storeData', function(req, res, next) {
